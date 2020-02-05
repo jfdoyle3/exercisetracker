@@ -14,7 +14,7 @@ Router.route('/').get ((req, res)=>{                     // ROUTE name
 
 // This is localhost/exercises/add                       // POST Request
 Router.route('/add').post((req,res) =>{                  // ROUTE name
-    const username=req.body.username,                    // ADD a Execerise
+    const username=req.body.username,                    // ADD an Execerise
           description=req.body.description,
           duration=Number(req.body.duration),
           date=Date.parse(req.body.date),                 
@@ -31,4 +31,4 @@ Router.route('/add').post((req,res) =>{                  // ROUTE name
     .catch(err=>res.status(400).json('Error: '+ err));  // CATCH returns ERROR and displays it.
 });
 
-module.exports=Router;                                  // DEFAULT line for exporting Routers
+module.exports=Router;                                  // DEFAULT line for exporting Router

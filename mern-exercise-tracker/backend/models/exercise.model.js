@@ -1,4 +1,4 @@
-// Ititalize Mongoose and Schema
+// Initialize Mongoose and Schema
 const mongoose=require('mongoose'),
       Schema=mongoose.Schema;
 

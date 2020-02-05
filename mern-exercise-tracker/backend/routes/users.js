@@ -14,7 +14,7 @@ router.route('/').get ((req, res)=>{                     // ROUTE name
 
 // This is localhost/users/add                          // POST Request
 router.route('/add').post((req,res) =>{                 // ROUTE name
-    const username=req.body.username,                   // ADD a User from localhost/user/add/jim
+    const username=req.body.username,                   // ADD a User from localhost/user/add/
           newUser=new User({username});                 // CREATE a newUser object in JSON format
         
     newUser.save()                                      // SAVE newUser to Database

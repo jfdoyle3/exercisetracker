@@ -52,7 +52,7 @@ export default class CreateExercises extends Component {
         });
     }
 
-    onSubmit(e){
+    onSubmit(e) {
         e.preventDefault();
 
         const exercise = {
